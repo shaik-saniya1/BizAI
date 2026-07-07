@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizAI - Products</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-5 py-3">
+            <h1 class="text-xl font-bold">BizAI</h1>
+
+            <ul class="flex space-x-5 text-sm">
+                <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="dashboard.html" class="hover:text-yellow-300">Dashboard</a></li>
+                <li><a href="customers.html" class="hover:text-yellow-300">Customers</a></li>
+                <li><a href="products.html" class="hover:text-yellow-300">Products</a></li>
+                <li><a href="login.html" class="hover:text-yellow-300">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-5xl mx-auto mt-8 px-4">
+
+        <div class="flex flex-col md:flex-row justify-between items-center mb-5 gap-3">
+
+            <h2 class="text-2xl font-bold text-gray-800">
+                Product Details
+            </h2>
+
+            <div class="flex gap-2">
+                <input
+                    type="text"
+                    placeholder="Search"
+                    class="border border-gray-300 rounded-md px-2 py-1 text-sm w-40">
+
+                <button
+                    class="bg-blue-700 text-white px-3 py-1 text-sm rounded-md hover:bg-blue-800">
+                    Add Product
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Product Table -->
+        <div class="overflow-x-auto bg-white rounded-lg shadow">
+
+            <table class="w-full text-sm">
+
+                <thead class="bg-blue-700 text-white">
+
+                    <tr>
+                        <th class="py-2 px-3">ID</th>
+                        <th class="py-2 px-3">Product</th>
+                        <th class="py-2 px-3">Category</th>
+                        <th class="py-2 px-3">Price</th>
+                        <th class="py-2 px-3">Stock</th>
+                    </tr>
+
+                </thead>
+
+                <tbody class="text-center">
+
+                    <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-3">P101</td>
+                        <td class="py-2 px-3">Laptop</td>
+                        <td class="py-2 px-3">Electronics</td>
+                        <td class="py-2 px-3">₹55,000</td>
+                        <td class="py-2 px-3">15</td>
+                    </tr>
+
+                    <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-3">P102</td>
+                        <td class="py-2 px-3">Keyboard</td>
+                        <td class="py-2 px-3">Accessories</td>
+                        <td class="py-2 px-3">₹1,200</td>
+                        <td class="py-2 px-3">50</td>
+                    </tr>
+
+                    <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-3">P103</td>
+                        <td class="py-2 px-3">Mouse</td>
+                        <td class="py-2 px-3">Accessories</td>
+                        <td class="py-2 px-3">₹700</td>
+                        <td class="py-2 px-3">80</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-100">
+                        <td class="py-2 px-3">P104</td>
+                        <td class="py-2 px-3">Monitor</td>
+                        <td class="py-2 px-3">Electronics</td>
+                        <td class="py-2 px-3">₹12,500</td>
+                        <td class="py-2 px-3">20</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

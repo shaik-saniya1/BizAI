@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizAI Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">BizAI</h1>
+
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="dashboard.html" class="hover:text-yellow-300">Dashboard</a></li>
+                <li><a href="customers.html" class="hover:text-yellow-300">Customers</a></li>
+                <li><a href="products.html" class="hover:text-yellow-300">Products</a></li>
+                <li><a href="login.html" class="hover:text-yellow-300">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="container mx-auto mt-8 px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">
+            Dashboard
+        </h2>
+
+        <!-- Dashboard Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-lg font-semibold text-gray-700">Customers</h3>
+                <p class="text-4xl font-bold text-blue-700 mt-3">250</p>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-lg font-semibold text-gray-700">Products</h3>
+                <p class="text-4xl font-bold text-green-600 mt-3">150</p>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-lg font-semibold text-gray-700">Orders</h3>
+                <p class="text-4xl font-bold text-yellow-500 mt-3">420</p>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <h3 class="text-lg font-semibold text-gray-700">Revenue</h3>
+                <p class="text-3xl font-bold text-red-500 mt-3">₹2,40,000</p>
+            </div>
+
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="bg-white shadow-lg rounded-lg mt-10 p-6">
+            <h3 class="text-xl font-bold mb-4">Recent Activity</h3>
+
+            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                <li>New customer registered.</li>
+                <li>Product stock updated.</li>
+                <li>Order #421 completed.</li>
+                <li>Monthly sales report generated.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
